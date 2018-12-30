@@ -1,6 +1,6 @@
-name := "tookitaki2"
+name := "bitcoin_price"
 
-version := "0.1"
+version := "1.0"
 
 scalaVersion := "2.11.8"
 

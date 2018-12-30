@@ -31,39 +31,33 @@ As this project runs, it uses the file response.json in the project directory to
 
 https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=year
 
-By default this code start a server on localhost as host and 8080 as port, but if you want to change it, edit the code part where http server is being setup. Make the host as 0.0.0.0 to access the APIs publicly. 
+By default this code start a server on localhost as host and 8080 as port.
 
 Once you have done above changes, you can run the the code with following command in project directory
 ```
 sbt run
 ```
-It will download all the required libraries and then start running the code in your system, mysql db insertion might take a little time, so wait for the logging to say "Insertion over". After all the preprocessing is done, you'll see the message "Server online at http://public-ip:8080/  ....."
-Once server has started, you can access the APIs in your web-browser. API details are given in next section
+It will download all the required libraries and then start running the code in your system.
 
 ## API details
 This project provides 5 APIs to get the bitcoin prices and see next 15 days prediction
 
-### 1
-This API provides the bitcoin price of last week
+### 1. This API provides the bitcoin price of last week
+http://localhost:8080/lastWeekPrice
 
-http://host:8080/lastWeekPrice
+### 2. This API provides the bitcoin price of last month. 
+http://localhost:8080/lastMonthPrice
 
-### 2
-This API provides the bitcoin price of last week
+### 3. This API provides the bitcoin price between two custom dates (dates should be in 'YYYY-MM-DD' format)
+http://localhost:8080/customPrice?start=2018-12-20&end=2018-12-28
 
-http://host:8080/lastWeekPrice
+### 4. This API provides the n days moving average between two custom dates (dates should be in 'YYYY-MM-DD' format)
+http://localhost:8080/movavg?start=2018-12-15&end=2018-12-28&n=2
 
-### 3
-This API provides the bitcoin price between two custom dates(dates should be in 'YYYY-MM-DD' format)
+### 5. This API provides the next 15 days prediction of the bitcoin price (ARIMA model has been used for it)
+http://localhost:8080/predictPrice
 
-http://host:8080/customPrice?start=2018-06-14&end=2018-06-18
 
-### 4
-This API provides the n days moving average between two custom dates
-
-http://host:8080/movavg?start=2018-06-10&end=2018-06-18&n=2
-
-### 5
-This API provides the next 15 days prediction of the bitcoin price (ARIMA model has been used for it)
-
-http://host:8080/predictPri
+## Improvements
+Aadvanced algorithms can be used to predict bitcoin prices.<br />
+Logging mechanism can be enhanced.

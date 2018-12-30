@@ -1,7 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sunkum/Downloads/bitcoin-price-master1/src/main/scala/Main.scala:219:21: not found: value futuredate[0m
-[0m[[0m[31merror[0m] [0m[0m                    futuredate = pdateFormat.format(ptime.getTime)[0m
-[0m[[0m[31merror[0m] [0m[0m                    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sunkum/Downloads/bitcoin-price-master1/src/main/scala/Main.scala:221:41: not found: value futuredate[0m
-[0m[[0m[31merror[0m] [0m[0m                    res :+= Map("time"->futuredate,"price"-> tmp.toString)[0m
-[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sunkum/Downloads/bitcoin-price-master/src/main/scala/bitcoin_price.scala:93:35: reassignment to val[0m
+[0m[[0m[31merror[0m] [0m[0m                            count = count+1[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sunkum/Downloads/bitcoin-price-master/src/main/scala/bitcoin_price.scala:102:24: not found: value count[0m
+[0m[[0m[31merror[0m] [0m[0m                    if(count!=8)[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

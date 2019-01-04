@@ -52,7 +52,7 @@ http://localhost:8080/lastMonthPrice
 http://localhost:8080/customPrice?start=2018-12-20&end=2018-12-28
 
 ### 4. This API provides the n days moving average between two custom dates (dates should be in 'YYYY-MM-DD' format)
-http://localhost:8080/movavg?start=2018-12-15&end=2018-12-28&n=2
+http://localhost:8080/movingAverage?start=2018-12-15&end=2018-12-28&n=2
 
 ### 5. This API provides the next 15 days prediction of the bitcoin price (ARIMA model has been used for it)
 http://localhost:8080/predictPrice
@@ -61,3 +61,6 @@ http://localhost:8080/predictPrice
 ## Improvements
 Aadvanced algorithms can be used to predict bitcoin prices.<br />
 Logging mechanism can be enhanced.
+
+## Note
+Akka HTTP is used for providing and consuming HTTP-based services and for test cases as well. Test cases are not currently runnable.

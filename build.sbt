@@ -28,4 +28,5 @@ libraryDependencies += "org.apache.spark" %% "spark-mllib" % "2.3.1"
 libraryDependencies += "org.apache.spark" %% "spark-core" % "2.1.0"
 // https://mvnrepository.com/artifact/org.apache.spark/spark-sql
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.1.0"
-
+// Akka http testkit
+libraryDependencies += "com.typesafe.akka" %% "akka-http-testkit" % "10.1.3"

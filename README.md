@@ -35,7 +35,7 @@ By default this code start a server on localhost as host and 8080 as port.
 
 Once you have done above changes, you can run the the code with following command in project directory
 ```
-sbt run
+sudo sbt run
 ```
 It will download all the required libraries and then start running the code in your system.
 
